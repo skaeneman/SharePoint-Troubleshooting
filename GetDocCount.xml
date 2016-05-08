@@ -1,0 +1,34 @@
+<DocumentCount>
+    <WebApplication  
+	  Name="https://portal.test.local">
+    </WebApplication>
+    <OutputFilePath 
+	  Name="D:\Output\DocumentCountOutput.csv">
+    </OutputFilePath>
+	<SearchAfterDate
+		Name="1/2/2013">  
+	</SearchAfterDate>
+	<FileExtensionsToSearch>
+		<Extension
+			Name="doc">
+		</Extension>
+		<Extension
+			Name="docx">
+		</Extension>
+		<Extension
+			Name="xls">
+		</Extension>	
+		<Extension
+			Name="xlsx">
+		</Extension>	
+		<Extension
+			Name="ppt">
+		</Extension>	
+		<Extension
+			Name="pptx">
+		</Extension>	
+		<Extension
+			Name="txt">
+		</Extension>		
+	</FileExtensionsToSearch>
+</DocumentCount>
