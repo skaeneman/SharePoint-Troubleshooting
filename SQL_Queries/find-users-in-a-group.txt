@@ -1,0 +1,9 @@
+
+#find users in a group on a site
+
+use WSS_Content
+SELECT  Groups.Title, UserInfo.tp_Login, UserInfo.tp_Title, UserInfo.tp_Email
+FROM GroupMembership with (nolock)
+inner join Groups with (nolock)ON GroupMembership.GroupId = Groups.ID
+inner join UserInfo with (nolock)ON GroupMembership.GroupId = UserInfo.tp_ID
+where UserInfo.tp_IsActive = '1' and UserInfo.tp_Login like '%d086386%'
